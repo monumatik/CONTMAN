@@ -1,0 +1,9 @@
+/.git
+/.pytest_cache
+/Lib
+/Include
+/tcl
+/__pycache__
+/Scripts
+
+LICENSE.txt

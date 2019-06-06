@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Keywords Analyzer</title>
+<h1>Hello CONTMAN!</h1>
+<form action='/' method='POST' name='URLForm'>
+	<input type='text' placeholder="Paste an URL for details :)" name='url'/>
+	<button type='submit'>Analyze</button>
+</form>
+{% for element in response %}
+<p> {{ element }}</p>
+{% endfor %}
