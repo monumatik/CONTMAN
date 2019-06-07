@@ -6,7 +6,7 @@ pip install -r requirements.txt
 
 
 
-For run a tests:
+For run tests:
 
 pytest -vv
 
