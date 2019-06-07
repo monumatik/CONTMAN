@@ -5,10 +5,13 @@ def makeRequest(url):
 	try: 
 		response = analyzeWebsiteContent(requests.get(url).content)
 	except requests.exceptions.MissingSchema:
-		response = ['Wrong URL']
+		response = ['Missing schema URL']
 	except requests.exceptions.ConnectionError:
 		response = ['Connection error to URL']
-	except:
+	except requests.exceptions.InvalidURL:
+		response = ['Invalid URL']
+	except Exception as ex:
 		response = ['Unexpected error']
+		print(ex)
 	return response
 
