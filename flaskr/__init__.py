@@ -19,7 +19,6 @@ def create_app(test_config = None):
 	def form():
 		url = request.form['url']
 		response = getKeywords(url)
-		print(response)
 		return render_template('index.html', response=response)
 
 	return app
